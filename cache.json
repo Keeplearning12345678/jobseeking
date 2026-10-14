@@ -1,0 +1,735 @@
+{
+ "_meta": {
+  "scraper": "scrape.mjs",
+  "version": 1,
+  "generatedAt": "2026/10/13 23:20:37",
+  "generatedAtMs": 1791904837037,
+  "scope": "只抓「已投递的公司.md」的已投公司（§一 总览 = 权威名单）+「面试.md」的题与口碑",
+  "stages": {
+   "screening": {
+    "emoji": "🟡",
+    "label": "筛选中",
+    "rank": 0,
+    "color": "screen",
+    "trait": "start",
+    "match": [
+     "筛选中",
+     "排期待发",
+     "未受理",
+     "未知"
+    ]
+   },
+   "assessment": {
+    "emoji": "🟣",
+    "label": "已测评 · 等面试",
+    "rank": 1,
+    "color": "assess",
+    "trait": "normal",
+    "match": [
+     "已测评 · 等面试",
+     "测评"
+    ]
+   },
+   "written": {
+    "emoji": "🟠",
+    "label": "笔试",
+    "rank": 2,
+    "color": "written",
+    "trait": "normal",
+    "match": [
+     "笔试"
+    ]
+   },
+   "aiInterview": {
+    "emoji": "🔵",
+    "label": "AI面试",
+    "rank": 3,
+    "color": "ivi",
+    "trait": "interview",
+    "match": [
+     "AI面试",
+     "面试"
+    ]
+   },
+   "hrInterview": {
+    "emoji": "🔵",
+    "label": "HR面试",
+    "rank": 4,
+    "color": "ivh",
+    "trait": "interview",
+    "match": [
+     "HR面试"
+    ]
+   },
+   "techInterview": {
+    "emoji": "🔵",
+    "label": "技术面试",
+    "rank": 5,
+    "color": "ivt",
+    "trait": "interview",
+    "match": [
+     "技术面试"
+    ]
+   },
+   "finalInterview": {
+    "emoji": "🔵",
+    "label": "综合面试",
+    "rank": 6,
+    "color": "ivf",
+    "trait": "interview",
+    "match": [
+     "综合面试"
+    ]
+   },
+   "offer": {
+    "emoji": "🟩",
+    "label": "offer",
+    "rank": 7,
+    "color": "offer",
+    "trait": "offer",
+    "match": [
+     "offer"
+    ]
+   },
+   "talentPool": {
+    "emoji": "🟥",
+    "label": "人才库",
+    "rank": 8,
+    "color": "rejected",
+    "trait": "reject",
+    "match": [
+     "人才库",
+     "已拒"
+    ]
+   }
+  },
+  "sources": [
+   {
+    "file": "已投递的公司.md",
+    "bytes": 5876,
+    "lines": 150,
+    "sha1": "34cf591de89a",
+    "mtime": "2026/10/10 12:19:08",
+    "role": "已投公司主台账（§〇 统计 / §一 总览 / §二 行业线 / §三 已放弃 / §四 逐家详情）"
+   },
+   {
+    "file": "面试.md",
+    "bytes": 3770,
+    "lines": 89,
+    "sha1": "49cb808451df",
+    "mtime": "2026/10/10 12:16:33",
+    "role": "面试题源（§一 通用题 / §四 逐家速查 / §五 口碑）"
+   }
+  ],
+  "ledger": {
+   "appliedTotal": 6,
+   "sent": 6,
+   "scheduled": 0,
+   "scheduledNos": [],
+   "jobsText": "约 9 个",
+   "headline": "> 已投递合计 6 家 = 已发出 6 家 ＋ 已排期待发 0 家。约 9 个岗位。"
+  },
+  "coverage": {
+   "total": 6,
+   "withDetail": 6,
+   "withStage": 6,
+   "withStageHard": 2,
+   "withLine": 6,
+   "withLineMissing": [],
+   "withReputation": 2,
+   "withThemes": 3,
+   "withDetailText": 6,
+   "withFit": 6,
+   "scheduled": 0,
+   "stageUnparsed": 0,
+   "byStage": {
+    "screening": 1,
+    "assessment": 1,
+    "written": 1,
+    "aiInterview": 0,
+    "hrInterview": 1,
+    "techInterview": 1,
+    "finalInterview": 0,
+    "offer": 1,
+    "talentPool": 0
+   },
+   "noStage": []
+  },
+  "matching": {
+   "exact": 20,
+   "loose": 0,
+   "contain": 0,
+   "similar": 0,
+   "alias": 0,
+   "none": 0,
+   "themeLinks": 4,
+   "aliasTable": 0,
+   "inheritedStage": 0,
+   "filledFromSpeedref": 0
+  },
+  "unmatched": [],
+  "unmatchedCount": 0,
+  "statsNotes": [
+   {
+    "id": "s0.1",
+    "text": "示例数据：6 家用于演示看板、跑道、热力图、行业线、口碑这些页面。"
+   },
+   {
+    "id": "s0.1",
+    "text": "真实使用时把「已投递合计」改成你自己的家数——工作台会拿这个数字和 §一 的行数对账，"
+   },
+   {
+    "id": "s0.1",
+    "text": "对不上就在首页标红提醒（这是故意的，防止漏记）。"
+   },
+   {
+    "id": "s0.2",
+    "text": "阶段口径九档見 §〇.3；面试分 AI / HR / 技术 / 综合四轮，靠文字标签认，不靠 emoji。"
+   }
+  ],
+  "gaps": []
+ },
+ "ledger": {
+  "appliedTotal": 6,
+  "sent": 6,
+  "scheduled": 0,
+  "scheduledNos": [],
+  "jobsText": "约 9 个",
+  "headline": "> 已投递合计 6 家 = 已发出 6 家 ＋ 已排期待发 0 家。约 9 个岗位。"
+ },
+ "companies": [
+  {
+   "key": "示例能源",
+   "no": 1,
+   "name": "示例能源集团",
+   "nameRaw": "示例能源集团",
+   "applyDate": "2026-08-28",
+   "city": "北京",
+   "roles": "热能工程师",
+   "fit": 3,
+   "fitRaw": "★★★",
+   "dispatch": "sent",
+   "stage": "techInterview",
+   "stageEmoji": "🔵",
+   "stageLabel": "技术面试",
+   "stageEvidence": "HR 2026-10-05 邮件约技术面，已回执确认时间",
+   "stageHard": true,
+   "line": "A",
+   "lineName": "能源 / 电力",
+   "channel": "官网",
+   "note": "",
+   "detailHead": "示例能源集团 ｜ 热能工程师",
+   "speedref": {
+    "no": 1,
+    "roles": "热能工程师",
+    "date": "08-28",
+    "city": "北京",
+    "fitRaw": "★★★",
+    "status": "🔵 技术面试"
+   },
+   "reputation": {
+    "count": 2,
+    "notes": [
+     {
+      "i": 1,
+      "title": "示例：能源央企秋招面经（技术面问什么）",
+      "author": "某匿名用户",
+      "time": "2026-09",
+      "likes": "128",
+      "link": "https://example.com/post/1"
+     },
+     {
+      "i": 2,
+      "title": "示例：这家单位加班多不多",
+      "author": "某匿名用户",
+      "time": "2026-08",
+      "likes": "45",
+      "link": "https://example.com/post/2"
+     }
+    ]
+   },
+   "themes": [
+    {
+     "theme": "加班强度",
+     "note": "新能源 / 制造类前者偏重；注意区分一手体验与转述",
+     "token": "示例能源集团"
+    }
+   ],
+   "matchedBy": [
+    "exact",
+    "exact",
+    "exact",
+    "exact"
+   ],
+   "sources": [
+    "已投递的公司.md#一、总览",
+    "已投递的公司.md#二、行业线分组",
+    "已投递的公司.md#四、逐家详情",
+    "面试.md#四、逐家速查",
+    "面试.md#五、公司口碑汇总"
+   ],
+   "applyDateRaw": "08-28",
+   "stageRaw": "技术面试",
+   "detail": "阶段：🔵 技术面试 ｜ 证据：HR 2026-10-05 邮件约技术面，已回执确认时间\n投递日：2026-08-28\n城市：北京\n对口度：★★★\n渠道：官网\n备注：面试官问过「换热器选型怎么算」，建议把课程设计的选型过程再过一遍。二面大概率聊课题。"
+  },
+  {
+   "key": "示例重工装备",
+   "no": 2,
+   "name": "示例重工装备",
+   "nameRaw": "示例重工装备",
+   "applyDate": "2026-09-01",
+   "city": "上海",
+   "roles": "工艺工程师",
+   "fit": 2,
+   "fitRaw": "★★☆",
+   "dispatch": "sent",
+   "stage": "assessment",
+   "stageEmoji": "🟣",
+   "stageLabel": "已测评 · 等面试",
+   "stageEvidence": "测评 2026-09-10 已完成（平台状态：已完成），面试未约",
+   "stageHard": true,
+   "line": "B",
+   "lineName": "装备制造",
+   "channel": "校招平台",
+   "note": "",
+   "detailHead": "示例重工装备 ｜ 工艺工程师",
+   "speedref": {
+    "no": 2,
+    "roles": "工艺工程师",
+    "date": "09-01",
+    "city": "上海",
+    "fitRaw": "★★☆",
+    "status": "🟣 已测评 · 等面试"
+   },
+   "reputation": null,
+   "themes": [],
+   "matchedBy": [
+    "exact",
+    "exact",
+    "exact"
+   ],
+   "sources": [
+    "已投递的公司.md#一、总览",
+    "已投递的公司.md#二、行业线分组",
+    "已投递的公司.md#四、逐家详情",
+    "面试.md#四、逐家速查"
+   ],
+   "applyDateRaw": "09-01",
+   "stageRaw": "已测评等面试",
+   "detail": "阶段：🟣 已测评 · 等面试 ｜ 证据：测评 2026-09-10 已完成（平台状态：已完成），面试未约\n投递日：2026-09-01\n城市：上海\n对口度：★★☆\n渠道：校招平台\n备注：测评是能力测试 + 性格测试，量比较大，做之前先睡够。"
+  },
+  {
+   "key": "示例化工材料",
+   "no": 3,
+   "name": "示例化工材料",
+   "nameRaw": "示例化工材料",
+   "applyDate": "2026-09-06",
+   "city": "天津",
+   "roles": "研发工程师（材料）",
+   "fit": 3,
+   "fitRaw": "★★★",
+   "dispatch": "sent",
+   "stage": "written",
+   "stageEmoji": "🟠",
+   "stageLabel": "笔试",
+   "stageEvidence": "2026-09-20 收到笔试通知，10-12 线上笔试",
+   "stageHard": false,
+   "line": "C",
+   "lineName": "材料 / 建筑",
+   "channel": "官网",
+   "note": "",
+   "detailHead": "示例化工材料 ｜ 研发工程师（材料）",
+   "speedref": {
+    "no": 3,
+    "roles": "研发工程师（材料）",
+    "date": "09-06",
+    "city": "天津",
+    "fitRaw": "★★★",
+    "status": "🟠 笔试"
+   },
+   "reputation": null,
+   "themes": [],
+   "matchedBy": [
+    "exact",
+    "exact",
+    "exact"
+   ],
+   "sources": [
+    "已投递的公司.md#一、总览",
+    "已投递的公司.md#二、行业线分组",
+    "已投递的公司.md#四、逐家详情",
+    "面试.md#四、逐家速查"
+   ],
+   "applyDateRaw": "09-06",
+   "stageRaw": "笔试",
+   "detail": "阶段：🟠 笔试 ｜ 证据：2026-09-20 收到笔试通知，10-12 线上笔试\n投递日：2026-09-06\n城市：天津\n对口度：★★★\n渠道：官网\n岗位 JD 要点：材料表征（XRD / SEM）、实验设计、英文文献阅读。"
+  },
+  {
+   "key": "示例制冷设备",
+   "no": 4,
+   "name": "示例制冷设备",
+   "nameRaw": "示例制冷设备",
+   "applyDate": "2026-09-15",
+   "city": "广州",
+   "roles": "制冷系统工程师",
+   "fit": 3,
+   "fitRaw": "★★★",
+   "dispatch": "sent",
+   "stage": "hrInterview",
+   "stageEmoji": "🔵",
+   "stageLabel": "HR面试",
+   "stageEvidence": "2026-10-08 HR 电话沟通 20 分钟，说后续安排技术面",
+   "stageHard": false,
+   "line": "B",
+   "lineName": "装备制造",
+   "channel": "内推",
+   "note": "",
+   "detailHead": "示例制冷设备 ｜ 制冷系统工程师",
+   "speedref": {
+    "no": 4,
+    "roles": "制冷系统工程师",
+    "date": "09-15",
+    "city": "广州",
+    "fitRaw": "★★★",
+    "status": "🔵 HR面试"
+   },
+   "reputation": {
+    "count": 1,
+    "notes": [
+     {
+      "i": 1,
+      "title": "示例：校招入职体验（出差频率）",
+      "author": "某匿名用户",
+      "time": "2025-12",
+      "likes": "76",
+      "link": "https://example.com/post/3"
+     }
+    ]
+   },
+   "themes": [
+    {
+     "theme": "加班强度",
+     "note": "新能源 / 制造类前者偏重；注意区分一手体验与转述",
+     "token": "示例制冷设备"
+    },
+    {
+     "theme": "出差频率",
+     "note": "售后与项目岗出差多，问清楚岗位性质",
+     "token": "示例制冷设备"
+    }
+   ],
+   "matchedBy": [
+    "exact",
+    "exact",
+    "exact",
+    "exact"
+   ],
+   "sources": [
+    "已投递的公司.md#一、总览",
+    "已投递的公司.md#二、行业线分组",
+    "已投递的公司.md#四、逐家详情",
+    "面试.md#四、逐家速查",
+    "面试.md#五、公司口碑汇总"
+   ],
+   "applyDateRaw": "09-15",
+   "stageRaw": "HR面试",
+   "detail": "阶段：🔵 HR面试 ｜ 证据：2026-10-08 HR 电话沟通 20 分钟，说后续安排技术面\n投递日：2026-09-15\n城市：广州\n对口度：★★★\n渠道：内推\n备注：问了期望薪资、能不能接受出差。"
+  },
+  {
+   "key": "示例建工",
+   "no": 5,
+   "name": "示例建工集团",
+   "nameRaw": "示例建工集团",
+   "applyDate": "2026-09-22",
+   "city": "成都",
+   "roles": "暖通设计岗",
+   "fit": 2,
+   "fitRaw": "★★☆",
+   "dispatch": "sent",
+   "stage": "offer",
+   "stageEmoji": "🟩",
+   "stageLabel": "offer",
+   "stageEvidence": "2026-10-09 收到 offer 邮件，要求 10-20 前答复",
+   "stageHard": false,
+   "line": "C",
+   "lineName": "材料 / 建筑",
+   "channel": "集团招聘系统",
+   "note": "",
+   "detailHead": "示例建工集团 ｜ 暖通设计岗",
+   "speedref": {
+    "no": 5,
+    "roles": "暖通设计岗",
+    "date": "09-22",
+    "city": "成都",
+    "fitRaw": "★★☆",
+    "status": "🟩 offer"
+   },
+   "reputation": null,
+   "themes": [
+    {
+     "theme": "待遇性价比",
+     "note": "稳定但涨薪慢，适合先保底",
+     "token": "示例建工集团"
+    }
+   ],
+   "matchedBy": [
+    "exact",
+    "exact",
+    "exact"
+   ],
+   "sources": [
+    "已投递的公司.md#一、总览",
+    "已投递的公司.md#二、行业线分组",
+    "已投递的公司.md#四、逐家详情",
+    "面试.md#四、逐家速查"
+   ],
+   "applyDateRaw": "09-22",
+   "stageRaw": "offer",
+   "detail": "阶段：🟩 offer ｜ 证据：2026-10-09 收到 offer 邮件，要求 10-20 前答复\n投递日：2026-09-22\n城市：成都\n对口度：★★☆\n渠道：集团招聘系统\n备注：待遇一般但稳定，先拿着当保底。"
+  },
+  {
+   "key": "示例数字科技",
+   "no": 6,
+   "name": "示例数字科技",
+   "nameRaw": "示例数字科技",
+   "applyDate": null,
+   "city": "杭州",
+   "roles": "数据分析工程师",
+   "fit": 1,
+   "fitRaw": "★☆☆",
+   "dispatch": "sent",
+   "stage": "screening",
+   "stageEmoji": "🟡",
+   "stageLabel": "筛选中",
+   "stageEvidence": "投出后无回执（推定）",
+   "stageHard": false,
+   "line": "A",
+   "lineName": "能源 / 电力",
+   "channel": "官网",
+   "note": "",
+   "detailHead": "示例数字科技 ｜ 数据分析工程师",
+   "speedref": {
+    "no": 6,
+    "roles": "数据分析工程师",
+    "date": "待补",
+    "city": "杭州",
+    "fitRaw": "★☆☆",
+    "status": "🟡 筛选中"
+   },
+   "reputation": null,
+   "themes": [],
+   "matchedBy": [
+    "exact",
+    "exact",
+    "exact"
+   ],
+   "sources": [
+    "已投递的公司.md#一、总览",
+    "已投递的公司.md#二、行业线分组",
+    "已投递的公司.md#四、逐家详情",
+    "面试.md#四、逐家速查"
+   ],
+   "applyDateRaw": "（日期待补）",
+   "stageRaw": "筛选中",
+   "detail": "阶段：🟡 筛选中 ｜ 证据：投出后无回执（推定）\n投递日：（未记）\n城市：杭州\n对口度：★☆☆\n渠道：官网\n备注：跨方向投的，命中率低。"
+  }
+ ],
+ "dropped": [
+  {
+   "name": "示例矿业集团",
+   "key": "示例矿业",
+   "bucket": "A. 岗位不合适",
+   "roles": "",
+   "reason": "常年驻外、倒班"
+  },
+  {
+   "name": "示例生物制药",
+   "key": "示例生物制药",
+   "bucket": "B. 硬门槛不满足",
+   "roles": "",
+   "reason": "要求临床医学背景，专业不符"
+  }
+ ],
+ "statsTables": [
+  {
+   "id": "s0.1",
+   "title": "投递进度",
+   "head": [
+    "项目",
+    "数量"
+   ],
+   "rows": [
+    [
+     "已投递合计",
+     "6 家"
+    ],
+    [
+     "已发出",
+     "6 家"
+    ],
+    [
+     "邮箱排期待发",
+     "0 家"
+    ],
+    [
+     "评估后放弃（不计入）",
+     "2 家"
+    ]
+   ]
+  },
+  {
+   "id": "s0.2",
+   "title": "阶段分布",
+   "head": [
+    "阶段",
+    "家数"
+   ],
+   "rows": [
+    [
+     "🟡 筛选中",
+     "1"
+    ],
+    [
+     "🟣 已测评 · 等面试",
+     "1"
+    ],
+    [
+     "🟠 笔试",
+     "1"
+    ],
+    [
+     "🔵 HR面试",
+     "1"
+    ],
+    [
+     "🔵 技术面试",
+     "1"
+    ],
+    [
+     "🟩 offer",
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": "s0.3",
+   "title": "阶段口径",
+   "head": [
+    "阶段",
+    "含义"
+   ],
+   "rows": [
+    [
+     "🟡 筛选中",
+     "投出去了，还没有任何回执"
+    ],
+    [
+     "🟣 已测评 · 等面试",
+     "测评做完了，卡在等面试邀约"
+    ],
+    [
+     "🟠 笔试",
+     "收到笔试通知 / 已进笔试环节"
+    ],
+    [
+     "🔵 AI面试",
+     "AI 面"
+    ],
+    [
+     "🔵 HR面试",
+     "HR 面"
+    ],
+    [
+     "🔵 技术面试",
+     "技术 / 专业面"
+    ],
+    [
+     "🔵 综合面试",
+     "终面 / 综合面"
+    ],
+    [
+     "🟩 offer",
+     "拿到 offer"
+    ],
+    [
+     "🟥 人才库",
+     "明确被拒 / 进人才库"
+    ]
+   ]
+  }
+ ],
+ "generalQuestions": [
+  {
+   "id": "Q1",
+   "title": "请做一下自我介绍",
+   "star": 3,
+   "body": "示例结构（1 分钟版）：① 学校 + 专业 + 一句话定位；② 一个和岗位最相关的项目（做了什么 → 做出了什么结果）；③ 为什么投这家 / 这个岗位。"
+  },
+  {
+   "id": "Q2",
+   "title": "你最大的缺点是什么？",
+   "star": 3,
+   "body": "示例思路：挑一个真实但可改进的缺点 + 正在怎么改，别用「我太追求完美」这类套话。"
+  },
+  {
+   "id": "Q3",
+   "title": "为什么选择我们公司？",
+   "star": 3,
+   "body": "示例结构：行业前景（1 句）→ 公司在这条线上的位置（1 句）→ 我能做什么（1 句，扣 JD）。"
+  },
+  {
+   "id": "硕1",
+   "title": "你的课题一句话是什么？",
+   "star": 2,
+   "body": "示例：面向 XX 场景的 YY 系统建模与优化。"
+  },
+  {
+   "id": "硕2",
+   "title": "创新点在哪？",
+   "star": 2,
+   "body": "示例：① 把 A 方法用到 B 问题上；② 模型精度 / 效率提升了多少（给数字）。"
+  },
+  {
+   "id": "硕3",
+   "title": "这个模型你自己写的还是现成的？",
+   "star": 2,
+   "body": "示例：说明哪部分是自研、哪部分用了开源工具，别含糊。"
+  },
+  {
+   "id": "本1",
+   "title": "毕设做了什么？",
+   "star": 2,
+   "body": "示例：用 XX 方法算 / 测了 YY，结论是 ZZ。"
+  },
+  {
+   "id": "本2",
+   "title": "和你硕士课题有什么关系？",
+   "star": 2,
+   "body": "示例：说明能力的延续性（建模 / 实验 / 编程哪条线是通的）。\n▸ 口述版：近 5 年职业规划（30 秒）\n示例：前 2 年把岗位基础功打扎实 → 第 3–5 年成为能独立负责一个模块的人 → 长期走技术 / 业务线（按岗位说）。\n---"
+  },
+  {
+   "id": "讲1",
+   "title": "口述版：近 5 年职业规划（30 秒）",
+   "star": 1,
+   "body": "示例：前 2 年把岗位基础功打扎实 → 第 3–5 年成为能独立负责一个模块的人 → 长期走技术 / 业务线（按岗位说）。\n---"
+  }
+ ],
+ "interviewCards": [],
+ "themes": [
+  {
+   "theme": "加班强度",
+   "companiesText": "示例能源集团、示例制冷设备",
+   "note": "新能源 / 制造类前者偏重；注意区分一手体验与转述"
+  },
+  {
+   "theme": "出差频率",
+   "companiesText": "示例制冷设备",
+   "note": "售后与项目岗出差多，问清楚岗位性质"
+  },
+  {
+   "theme": "待遇性价比",
+   "companiesText": "示例建工集团",
+   "note": "稳定但涨薪慢，适合先保底"
+  }
+ ]
+}
